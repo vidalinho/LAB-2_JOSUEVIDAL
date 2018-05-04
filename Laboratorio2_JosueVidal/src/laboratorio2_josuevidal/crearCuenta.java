@@ -14,9 +14,7 @@ import java.util.ArrayList;
  */
 public class crearCuenta {
 
-    //  número de cuenta,
-//fecha de nacimiento, edad, ciudad de residencia, nacionalidad, ID, user, password, y sus notas en cada
-//clase. 
+  
     static void cuenta() {
         ArrayList account = new ArrayList();
         Scanner lea = new Scanner(System.in);
@@ -44,6 +42,6 @@ public class crearCuenta {
         System.out.println("Ingrese una contrasena sin numeros: ");
         String contra = lea.next();
         account.add(contra);
-//fewfas
+        
     }
 }

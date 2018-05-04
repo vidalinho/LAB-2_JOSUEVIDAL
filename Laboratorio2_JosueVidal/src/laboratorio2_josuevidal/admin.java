@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class admin {
 
     static void administracion() {
-        ArrayList preguntas = new ArrayList();
+        ArrayList examen = new ArrayList();
         Scanner lea = new Scanner(System.in);
         System.out.println("1) Crear examen ");
         System.out.println("2) Revisar examen ");
@@ -25,17 +25,22 @@ public class admin {
         int opc = lea.nextInt();
         switch (opc) {
             case 1:
+                System.out.println("Ingrese la materia del examen:");
+                String mat=lea.next();
+                examen.add(mat);               
                 char r = 's';
                 while (r == 's') { //aqui creo el examen
+                    
                     System.out.println("Ingrese una pregunta: ");
                     String pregunta = lea.nextLine();
                     pregunta = lea.nextLine();
-                    preguntas.add(pregunta);
+                    examen.add(pregunta);
                     System.out.println("Desea agregar otra pregunta [s/n]: ");
                     r=lea.next().charAt(0);
 
                 }
-                System.out.println(preguntas);
+                
+                System.out.println(examen);
 
         }
 
