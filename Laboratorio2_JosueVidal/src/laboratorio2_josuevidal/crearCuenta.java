@@ -16,32 +16,33 @@ public class crearCuenta {
 
   
     static void cuenta() {
-        ArrayList account = new ArrayList();
+        variables v= new variables ();
+     
         Scanner lea = new Scanner(System.in);
         System.out.println("Ingrese numero de cuenta:");
         int nCuenta = lea.nextInt();
-        account.add(nCuenta);
+        v.account.add(nCuenta);
         System.out.println("Ingrese fecha de nacimiento separado por espacio (4 3 2018): ");
         int fNacimiento = lea.nextInt();
-        account.add(fNacimiento);
+       v. account.add(fNacimiento);
         System.out.println("Ingrese su edad");
         int edad = lea.nextInt();
-        account.add(edad);
+        v.account.add(edad);
         System.out.println("Ingrese ciudad de residencia: ");
         String ciudad = lea.next();
-        account.add(ciudad);
+        v.account.add(ciudad);
         System.out.println("Ingrese nacionalidad:  ");
         String nac = lea.next();
-        account.add(nac);
+        v.account.add(nac);
         System.out.println("Ingrese ID ");
         int id = lea.nextInt();
-        account.add(id);
+        v.account.add(id);
         System.out.println("Ingrese su usuario ");
         String usuario = lea.next();
-        account.add(usuario);
+        v.account.add(usuario);
         System.out.println("Ingrese una contrasena sin numeros: ");
         String contra = lea.next();
-        account.add(contra);
+        v.account.add(contra);
         
     }
 }

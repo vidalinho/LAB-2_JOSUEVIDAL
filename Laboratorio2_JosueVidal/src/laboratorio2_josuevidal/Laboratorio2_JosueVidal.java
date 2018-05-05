@@ -19,6 +19,8 @@ public class Laboratorio2_JosueVidal {
     public static void main(String[] args) {
         Scanner lea = new Scanner(System.in);
         admin m= new admin();
+        logIn q=new logIn();
+        crearCuenta n=new crearCuenta();
         System.out.println("1) Administracion ");
         System.out.println("2) Crear cuenta ");
         System.out.println("3) log in");
@@ -29,8 +31,10 @@ public class Laboratorio2_JosueVidal {
                 m.administracion();
                 break;
             case 2:
+                n.cuenta();
                 break;
             case 3:
+                q.logiin();
                 break;
         }//fin del switch
     }//fin del main
